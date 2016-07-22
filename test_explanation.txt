@@ -1,0 +1,34 @@
+In the test, we set up the following directory structure:
+
+	test/one/two/	three
+		 two/	four
+				has files with the same names (a.txt and b.txt)
+				and hashes, but in another order.
+		 two/   five	has the same contents as three but also c.txt
+
+	test/one/two/	six
+				has files with the same names and different
+				hashes
+
+	test/one/two/	seven	has files with different names and same hashes
+
+	test/two/*		same as one
+
+
+When not doing any redundancy pruning, the program should return:
+	test/one/two/three, test/one/two/four, test/two/two/three, test/two/four
+		are all equal, with count 2
+	test/one/two/six is equal to test/two/two/six (count 3)
+	test/one/two/seven is equal to test/two/two/seven (count 2)
+	test/one is equal to test/two (count 11)
+
+and the others are not equal. We could try contains later.
+
+With pruning, we should get
+	test/one is equal to test/two (count 11)
+And then, unless it's maximally pruned, either
+	test/one/two/three is equal to test/one/two/four (count 2)
+or
+	test/two/two/three is equal to test/two/two/four (count 2)
+
+and that's it.

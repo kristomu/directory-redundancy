@@ -1,0 +1,24 @@
+1 1 aa   test/one/two/three/a.txt
+1 1 bb   test/one/two/three/b.txt
+1 1 bb   test/one/two/four/b.txt
+1 1 aa   test/one/two/four/a.txt
+1 1 aa   test/one/two/five/a.txt
+1 1 bb   test/one/two/five/b.txt
+1 1 cc   test/one/two/five/c.txt
+1 1 dd   test/one/two/six/a.txt
+1 1 ee   test/one/two/six/b.txt
+1 1 aa   test/one/two/seven/c q.txt
+1 1 bb   test/one/two/seven/d.txt
+1 1 aa   test/two/two/three/a.txt
+1 1 bb   test/two/two/three/b.txt
+1 1 aa   test/two/two/four/a.txt
+1 1 bb   test/two/two/four/b.txt
+1 1 aa   test/two/two/five/a.txt
+1 1 bb   test/two/two/five/b.txt
+1 1 cc   test/two/two/five/c.txt
+1 1 dd   test/two/two/six/a.txt
+1 1 ee   test/two/two/six/b.txt
+1 1 aa   test/two/two/seven/c q.txt
+1 1 bb   test/two/two/seven/d.txt
+1 1 xx   test/three/one.txt
+1 1 xx   test/four/onez.txt
